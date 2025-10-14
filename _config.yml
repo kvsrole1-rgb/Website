@@ -1,7 +1,7 @@
 # Site settings
 title: "ArkaVed Technologies Inc - Professional Software Development Services"
 description: "Leading software development company specializing in app development, game development, software consulting, and cloud services. Transform your ideas into cutting-edge digital solutions."
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/Website" # the subpath of your site, e.g. /blog
 url: "https://kvsrole1-rgb.github.io/Website" # the base hostname & protocol for your site
 
 # SEO and Social Media
@@ -77,13 +77,13 @@ defaults:
 # Navigation
 navigation:
   - title: "Home"
-    url: "/"
+    url: ""
   - title: "About"
-    url: "/about/"
+    url: "about/"
   - title: "Team"
-    url: "/team/"
+    url: "team/"
   - title: "Contact"
-    url: "/contact/"
+    url: "contact/"
 
 # Social links
 social:
