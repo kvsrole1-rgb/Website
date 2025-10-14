@@ -35,6 +35,10 @@ markdown: kramdown
 highlighter: rouge
 theme: minima
 
+# Theme settings
+minima:
+  skin: classic
+
 # Plugins
 plugins:
   - jekyll-feed

@@ -1,0 +1,24 @@
+---
+---
+
+@import "minima";
+
+/* Basic overrides to ensure theme loads */
+body {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+.site-header {
+  background: linear-gradient(135deg, #2c2c2c, #404040) !important;
+}
+
+.hero {
+  background: linear-gradient(135deg, #2c2c2c, #404040) !important;
+  color: #ffffff !important;
+}
+
+.btn {
+  background: linear-gradient(135deg, #cc0000, #ff4a4a) !important;
+  color: #ffffff !important;
+}
