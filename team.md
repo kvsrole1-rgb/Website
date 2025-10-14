@@ -183,8 +183,8 @@ Our experienced directors bring together decades of industry expertise and techn
   <h2>Ready to Work With Our Expert Leadership Team?</h2>
   <p>Interested in learning more about our team and how we can help with your project? We'd love to connect and discuss your specific needs with our co-founders.</p>
   <div class="cta-buttons">
-    <a href="/contact/" class="btn btn-primary">Schedule Consultation</a>
-    <a href="/about/" class="btn btn-secondary">Learn More About Us</a>
+    <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">Schedule Consultation</a>
+    <a href="{{ '/about/' | relative_url }}" class="btn btn-secondary">Learn More About Us</a>
   </div>
   <div class="cta-features">
     <div class="cta-feature">

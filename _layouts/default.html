@@ -73,10 +73,10 @@
             <div class="footer-section footer-company">
               <h4>Company</h4>
               <ul class="footer-links">
-                <li><a href="/about/">About Us</a></li>
-                <li><a href="/team/">Our Team</a></li>
-                <li><a href="/contact/">Contact</a></li>
-                <li><a href="/contact/">Get Quote</a></li>
+                <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
+                <li><a href="{{ '/team/' | relative_url }}">Our Team</a></li>
+                <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+                <li><a href="{{ '/contact/' | relative_url }}">Get Quote</a></li>
               </ul>
             </div>
             
@@ -93,7 +93,7 @@
                 </a>
               </div>
               <div class="footer-cta">
-                <a href="/contact/" class="btn btn-footer">Get Free Consultation</a>
+                <a href="{{ '/contact/' | relative_url }}" class="btn btn-footer">Get Free Consultation</a>
               </div>
             </div>
           </div>
@@ -107,8 +107,8 @@
               <p>&copy; 2024 ArkaVed Technologies Inc. All rights reserved.</p>
             </div>
             <div class="footer-legal">
-              <a href="/privacy/">Privacy Policy</a>
-              <a href="/terms/">Terms of Service</a>
+              <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
+              <a href="{{ '/terms/' | relative_url }}">Terms of Service</a>
             </div>
           </div>
         </div>

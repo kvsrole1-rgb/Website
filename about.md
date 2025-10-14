@@ -301,8 +301,8 @@ Founded with a vision to bridge the gap between brilliant ideas and their digita
   <h2>Ready to Work With Our Expert Team?</h2>
   <p>Interested in learning more about our team and how we can help with your project? We'd love to connect and discuss your specific needs.</p>
   <div class="cta-buttons">
-    <a href="/contact/" class="btn btn-primary">Get Free Consultation</a>
-    <a href="/team/" class="btn btn-secondary">Meet Our Team</a>
+    <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">Get Free Consultation</a>
+    <a href="{{ '/team/' | relative_url }}" class="btn btn-secondary">Meet Our Team</a>
   </div>
   <div class="cta-features">
     <div class="cta-feature">
