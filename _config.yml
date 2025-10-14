@@ -35,6 +35,9 @@ markdown: kramdown
 highlighter: rouge
 theme: minima
 
+# GitHub Pages settings
+github: [metadata]
+
 # Theme settings
 minima:
   skin: classic

@@ -3,6 +3,7 @@ layout: default
 title: "Meet Our Team - ArkaVed Technologies Inc Leadership"
 description: "Meet the experienced directors and leaders behind ArkaVed Technologies Inc who bring years of expertise to every project. Co-founders with deep technical backgrounds."
 keywords: "team, leadership, directors, co-founders, software developers, technical consultants, ArkaVed Technologies"
+permalink: /team/
 ---
 
 <div class="service-hero">

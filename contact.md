@@ -3,6 +3,7 @@ layout: default
 title: "Contact ArkaVed Technologies Inc - Get Your Free Consultation"
 description: "Get in touch with ArkaVed Technologies Inc. We're here to help bring your ideas to life with our expert development services. Free consultation available."
 keywords: "contact us, software development consultation, app development quote, game development services, cloud services consulting, free consultation"
+permalink: /contact/
 ---
 
 <div class="service-hero">
