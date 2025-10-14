@@ -1,0 +1,89 @@
+# Site settings
+title: "ArkaVed Technologies Inc - Professional Software Development Services"
+description: "Leading software development company specializing in app development, game development, software consulting, and cloud services. Transform your ideas into cutting-edge digital solutions."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://kvsrole1-rgb.github.io/Website" # the base hostname & protocol for your site
+
+# SEO and Social Media
+author: "ArkaVed Technologies Inc"
+keywords: "software development, app development, game development, cloud services, mobile apps, web development, software consulting, technology solutions, digital transformation, custom software, enterprise software, fintech, healthcare technology, e-commerce development"
+google_site_verification: ""
+twitter:
+  username: ""
+  card: "summary_large_image"
+facebook:
+  app_id: ""
+  publisher: ""
+  admins: ""
+
+# SEO Plugin Settings
+seo:
+  type: "Organization"
+  name: "ArkaVed Technologies Inc"
+  description: "Professional software development company providing app development, game development, software consulting, and cloud services"
+  url: "https://kvsrole1-rgb.github.io/Website"
+  logo: "https://kvsrole1-rgb.github.io/Website/images/logo.png"
+  sameAs:
+    - "https://www.linkedin.com/company/arkaved-technologies"
+  social:
+    name: "ArkaVed Technologies Inc"
+    links:
+      - "https://www.linkedin.com/company/arkaved-technologies"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections
+collections:
+  services:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  - title: "Team"
+    url: "/team/"
+  - title: "Contact"
+    url: "/contact/"
+
+# Social links
+social:
+  - name: "LinkedIn"
+    url: "https://linkedin.com/company/arkaved-technologies"
+  - name: "Email"
+    url: "mailto:kvs.role1@gmail.com"
