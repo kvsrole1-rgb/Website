@@ -80,7 +80,7 @@ defaults:
 # Navigation
 navigation:
   - title: "Home"
-    url: ""
+    url: "/"
   - title: "About"
     url: "about/"
   - title: "Team"

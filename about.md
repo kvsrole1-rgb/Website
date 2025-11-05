@@ -9,101 +9,11 @@ permalink: /about/
 <div class="service-hero">
   <h1>About ArkaVed Technologies Inc</h1>
   <p class="service-tagline">We believe that every great idea deserves to be brought to life. Our mission is to transform innovative concepts into cutting-edge digital solutions that drive business growth and create meaningful impact.</p>
-  <div class="service-stats">
-    <div class="stat-item">
-      <span class="stat-number">5+</span>
-      <span class="stat-label">Years Experience</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number">200+</span>
-      <span class="stat-label">Projects Delivered</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number">100%</span>
-      <span class="stat-label">Client Satisfaction</span>
-    </div>
-  </div>
 </div>
 
 ## Our Mission
 
 At ArkaVed Technologies Inc, we believe that every great idea deserves to be brought to life. Our mission is to transform innovative concepts into cutting-edge digital solutions that drive business growth and create meaningful impact.
-
-## Our Story
-
-Founded with a vision to bridge the gap between brilliant ideas and their digital realization, ArkaVed Technologies Inc has been at the forefront of technological innovation. We combine deep technical expertise with creative problem-solving to deliver solutions that not only meet but exceed our clients' expectations.
-
-## What We Do
-
-<div class="expertise-container">
-  <div class="expertise-item">
-    <div class="expertise-question">
-      <h3>💻 Software Development Excellence</h3>
-      <span class="expertise-icon">+</span>
-    </div>
-    <div class="expertise-answer">
-      <p>Our team excels in creating robust, scalable software solutions that power businesses of all sizes.</p>
-      <ul>
-        <li><strong>Enterprise Applications</strong>: Custom software solutions for large organizations</li>
-        <li><strong>API Development</strong>: RESTful and GraphQL APIs with comprehensive documentation</li>
-        <li><strong>Database Solutions</strong>: PostgreSQL, MongoDB, and data migration services</li>
-        <li><strong>System Integration</strong>: Connecting disparate systems and third-party services</li>
-        <li><strong>Consulting Services</strong>: Short-term and long-term development partnerships</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="expertise-item">
-    <div class="expertise-question">
-      <h3>📱 Mobile & Web Applications</h3>
-      <span class="expertise-icon">+</span>
-    </div>
-    <div class="expertise-answer">
-      <p>We craft intuitive, high-performance applications that deliver exceptional user experiences across all platforms.</p>
-      <ul>
-        <li><strong>Native Mobile Development</strong>: iOS and Android applications with platform-specific features</li>
-        <li><strong>Cross-Platform Solutions</strong>: React Native and Flutter for efficient development</li>
-        <li><strong>Modern Web Applications</strong>: React, Vue.js, and Angular-based solutions</li>
-        <li><strong>Progressive Web Apps</strong>: App-like experiences in web browsers</li>
-        <li><strong>Responsive Design</strong>: Mobile-first approach for optimal user experience</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="expertise-item">
-    <div class="expertise-question">
-      <h3>🎮 Gaming Innovation</h3>
-      <span class="expertise-icon">+</span>
-    </div>
-    <div class="expertise-answer">
-      <p>Our game development services bring immersive experiences to life with cutting-edge technology and engaging gameplay.</p>
-      <ul>
-        <li><strong>Unity Development</strong>: 2D and 3D games for multiple platforms</li>
-        <li><strong>Unreal Engine</strong>: AAA-quality games with advanced graphics</li>
-        <li><strong>Mobile Games</strong>: iOS and Android games with monetization strategies</li>
-        <li><strong>Web Games</strong>: HTML5 and WebGL-based browser games</li>
-        <li><strong>VR/AR Experiences</strong>: Immersive virtual and augmented reality applications</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="expertise-item">
-    <div class="expertise-question">
-      <h3>☁️ Cloud Solutions</h3>
-      <span class="expertise-icon">+</span>
-    </div>
-    <div class="expertise-answer">
-      <p>We help businesses leverage the power of cloud computing for scalable, secure, and efficient infrastructure.</p>
-      <ul>
-        <li><strong>Cloud Migration</strong>: AWS, Azure, and Google Cloud Platform migration</li>
-        <li><strong>Security Implementation</strong>: Comprehensive cloud security and compliance</li>
-        <li><strong>FinOps Optimization</strong>: Cost optimization and resource management</li>
-        <li><strong>Architecture Consulting</strong>: Scalable cloud architecture design</li>
-        <li><strong>DevOps & CI/CD</strong>: Automated deployment and monitoring solutions</li>
-      </ul>
-    </div>
-  </div>
-</div>
 
 ## Our Approach
 
@@ -177,85 +87,9 @@ Founded with a vision to bridge the gap between brilliant ideas and their digita
   </div>
 </div>
 
-## Technical Leadership
-
-<div class="benefits-container">
-  <div class="benefits-item">
-    <div class="benefits-question">
-      <h3>👥 Experienced Directors</h3>
-      <span class="benefits-icon">+</span>
-    </div>
-    <div class="benefits-answer">
-      <p>Both directors bring strong technical backgrounds and leadership experience that enables them to guide complex projects from conception to delivery.</p>
-      <ul>
-        <li><strong>Software Architecture & Design</strong>: Creating scalable, maintainable software solutions</li>
-        <li><strong>Cloud Computing</strong>: AWS, Azure, and Google Cloud Platform expertise</li>
-        <li><strong>Mobile Development</strong>: Native and cross-platform mobile application development</li>
-        <li><strong>Game Development</strong>: Unity, Unreal Engine, and custom game development</li>
-        <li><strong>Project Management</strong>: Agile methodologies and team leadership</li>
-        <li><strong>Technology Consulting</strong>: Strategic technology planning and implementation</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="benefits-item">
-    <div class="benefits-question">
-      <h3>🏭 Industry Experience</h3>
-      <span class="benefits-icon">+</span>
-    </div>
-    <div class="benefits-answer">
-      <p>Our leadership team has worked across various industries, bringing diverse expertise to every project.</p>
-      <ul>
-        <li><strong>Healthcare Technology</strong>: Electronic health records, telemedicine platforms</li>
-        <li><strong>Financial Services</strong>: Banking applications, fintech solutions</li>
-        <li><strong>E-commerce</strong>: Online marketplaces, payment processing systems</li>
-        <li><strong>Gaming</strong>: Mobile games, desktop applications, VR/AR experiences</li>
-        <li><strong>Enterprise Software</strong>: CRM systems, business intelligence tools</li>
-        <li><strong>Startups</strong>: MVP development, technology consulting, scaling solutions</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="benefits-item">
-    <div class="benefits-question">
-      <h3>🎯 Commitment to Excellence</h3>
-      <span class="benefits-icon">+</span>
-    </div>
-    <div class="benefits-answer">
-      <p>Our directors are committed to delivering exceptional results and building long-term partnerships.</p>
-      <ul>
-        <li><strong>Continuous Learning</strong>: Staying updated with the latest technologies and industry trends</li>
-        <li><strong>Quality Delivery</strong>: Ensuring every project meets the highest standards</li>
-        <li><strong>Client Success</strong>: Building long-term partnerships based on trust and results</li>
-        <li><strong>Innovation</strong>: Embracing new technologies and creative problem-solving approaches</li>
-        <li><strong>Team Development</strong>: Fostering a culture of growth and excellence within our organization</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="benefits-item">
-    <div class="benefits-question">
-      <h3>🚀 Why Our Leadership Matters</h3>
-      <span class="benefits-icon">+</span>
-    </div>
-    <div class="benefits-answer">
-      <p>Strategic leadership that ensures every project aligns with business objectives and delivers measurable value.</p>
-      <ul>
-        <li><strong>Strategic Vision</strong>: Ensuring every project aligns with business objectives</li>
-        <li><strong>Technical Excellence</strong>: Hands-on expertise for informed technology decisions</li>
-        <li><strong>Client Focus</strong>: Active involvement in client relationships and communication</li>
-        <li><strong>Innovation Drive</strong>: Encouraging cutting-edge solutions for competitive advantage</li>
-        <li><strong>Results-Oriented</strong>: Focus on delivering measurable value and success</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
 ## Why Choose ArkaVed Technologies?
 
-<div class="why-choose-us">
-  <h2>Why Choose ArkaVed Technologies?</h2>
-  <p class="section-subtitle">We combine technical excellence with business acumen to deliver solutions that drive real results</p>
+<p class="section-subtitle">We combine technical excellence with business acumen to deliver solutions that drive real results</p>
   
   <div class="features-grid">
     <div class="feature-card">
