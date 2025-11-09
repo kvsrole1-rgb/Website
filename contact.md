@@ -15,7 +15,7 @@ permalink: /contact/
 
 <div style="text-align: center; margin: 2rem 0;">
   <h3>Direct Contact</h3>
-  <p><strong>Email</strong>: <a href="mailto:kvs.role1@gmail.com">kvs.role1@gmail.com</a></p>
+  <p><strong>Email</strong>: <a href="mailto:arkaved.tech@gmail.com">arkaved.tech@gmail.com</a></p>
   <p>We typically respond to all inquiries within 24 hours during business days.</p>
 </div>
 
@@ -25,7 +25,7 @@ permalink: /contact/
 </div>
 
 <div class="contact-form-container">
-  <form class="contact-form" action="https://formsubmit.co/kvs.role1@gmail.com" method="POST">
+  <form class="contact-form" action="https://formsubmit.co/arkaved.tech@gmail.com" method="POST">
     <!-- FormSubmit configuration -->
     <input type="hidden" name="_subject" value="New Contact Form Submission - ArkaVed Technologies">
     <input type="hidden" name="_next" value="https://kvsrole1-rgb.github.io/Website/contact/?success=true">
@@ -238,4 +238,6 @@ permalink: /contact/
   </div>
 </div>
 
-Ready to get started? [Send us a message](#contact-form) or email us directly at [kvs.role1@gmail.com](mailto:kvs.role1@gmail.com).
+<div style="text-align: center; margin: 2rem 0;">
+  <p>Ready to get started? [Send us a message](#contact-form) or email us directly at [arkaved.tech@gmail.com](mailto:arkaved.tech@gmail.com).</p>
+</div>

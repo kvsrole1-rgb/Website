@@ -105,10 +105,6 @@ permalink: /team/
   </div>
   <div class="cta-features">
     <div class="cta-feature">
-      <span class="feature-icon">💬</span>
-      <span>Direct Access to Co-Founders</span>
-    </div>
-    <div class="cta-feature">
       <span class="feature-icon">📋</span>
       <span>Personalized Project Discussion</span>
     </div>
