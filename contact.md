@@ -28,7 +28,7 @@ permalink: /contact/
   <form class="contact-form" action="https://formsubmit.co/arkaved.tech@gmail.com" method="POST">
     <!-- FormSubmit configuration -->
     <input type="hidden" name="_subject" value="New Contact Form Submission - ArkaVed Technologies">
-    <input type="hidden" name="_next" value="https://kvsrole1-rgb.github.io/Website/contact/?success=true">
+    <input type="hidden" name="_next" value="https://kvsrole1-rgb.github.io/Website/thank-you/">
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_template" value="table">
     
