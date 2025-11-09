@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.4.0"
 gem "minima", "~> 2.5"
+gem "sass-embedded", "1.75.0"  # Pin to stable version to avoid build issues on GitHub Actions
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
