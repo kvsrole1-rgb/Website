@@ -147,7 +147,7 @@ Edit `team.md` to update team member information, including:
 
 ### Contact Form
 
-The contact form uses FormSubmit for email delivery. The form is configured in `contact.md` and will send emails to `kvs.role1@gmail.com`.
+The contact form uses FormSubmit for email delivery. The form is configured in `contact.md` and will send emails to `arkaved.tech@gmail.com`.
 
 ## Customization
 
@@ -230,7 +230,7 @@ bundle exec jekyll serve
 
 For technical support or questions about deployment:
 
-- **Email**: kvs.role1@gmail.com
+- **Email**: arkaved.tech@gmail.com
 - **Documentation**: Check Jekyll documentation at https://jekyllrb.com/
 - **GitHub Pages**: Check GitHub Pages documentation
 

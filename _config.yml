@@ -80,7 +80,7 @@ defaults:
 # Navigation
 navigation:
   - title: "Home"
-    url: ""
+    url: "/"
   - title: "About"
     url: "about/"
   - title: "Team"
@@ -93,4 +93,4 @@ social:
   - name: "LinkedIn"
     url: "https://linkedin.com/company/arkaved-technologies"
   - name: "Email"
-    url: "mailto:kvs.role1@gmail.com"
+    url: "mailto:arkaved.tech@gmail.com"

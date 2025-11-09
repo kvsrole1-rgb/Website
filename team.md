@@ -9,25 +9,13 @@ permalink: /team/
 <div class="service-hero">
   <h1>Meet Our Team</h1>
   <p class="service-tagline">Our experienced directors bring together decades of industry expertise and technical knowledge to guide ArkaVed Technologies Inc towards continued success and innovation.</p>
-  <div class="service-stats">
-    <div class="stat-item">
-      <span class="stat-number">10+</span>
-      <span class="stat-label">Years Combined Experience</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number">200+</span>
-      <span class="stat-label">Projects Led</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number">100%</span>
-      <span class="stat-label">Client Satisfaction</span>
-    </div>
-  </div>
 </div>
 
 ## Leadership Team
 
-Our experienced directors bring together decades of industry expertise and technical knowledge to guide ArkaVed Technologies Inc towards continued success and innovation.
+<div style="text-align: center; margin: 2rem 0;">
+  <p>Our experienced directors bring together decades of industry expertise and technical knowledge to guide ArkaVed Technologies Inc towards continued success and innovation.</p>
+</div>
 
 <div class="team-grid">
   <div class="team-member">
@@ -106,78 +94,6 @@ Our experienced directors bring together decades of industry expertise and techn
   </div>
 </div>
 
-## Why Our Leadership Matters
-
-<div class="benefits-container">
-  <div class="benefits-item">
-    <div class="benefits-question">
-      <h3>🎯 Strategic Vision</h3>
-      <span class="benefits-icon">+</span>
-    </div>
-    <div class="benefits-answer">
-      <p>Our directors provide strategic oversight that ensures every project aligns with business objectives and delivers measurable value.</p>
-      <ul>
-        <li><strong>Business Alignment</strong>: Ensuring technology solutions support business goals</li>
-        <li><strong>Strategic Planning</strong>: Long-term vision and roadmap development</li>
-        <li><strong>ROI Focus</strong>: Measuring and maximizing return on technology investments</li>
-        <li><strong>Market Analysis</strong>: Understanding industry trends and competitive landscape</li>
-        <li><strong>Growth Strategy</strong>: Scaling solutions to support business expansion</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="benefits-item">
-    <div class="benefits-question">
-      <h3>⚡ Technical Excellence</h3>
-      <span class="benefits-icon">+</span>
-    </div>
-    <div class="benefits-answer">
-      <p>With hands-on technical expertise, our leadership team can make informed decisions about technology choices, architecture, and implementation approaches.</p>
-      <ul>
-        <li><strong>Technology Selection</strong>: Choosing the right tools and frameworks for each project</li>
-        <li><strong>Architecture Design</strong>: Creating scalable and maintainable system architectures</li>
-        <li><strong>Code Quality</strong>: Ensuring high standards and best practices</li>
-        <li><strong>Performance Optimization</strong>: Maximizing system efficiency and scalability</li>
-        <li><strong>Security Implementation</strong>: Protecting systems and data from threats</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="benefits-item">
-    <div class="benefits-question">
-      <h3>👥 Client Focus</h3>
-      <span class="benefits-icon">+</span>
-    </div>
-    <div class="benefits-answer">
-      <p>Both directors are actively involved in client relationships, ensuring clear communication and alignment throughout every project.</p>
-      <ul>
-        <li><strong>Direct Communication</strong>: Regular interaction with key stakeholders</li>
-        <li><strong>Requirement Understanding</strong>: Deep comprehension of client needs and goals</li>
-        <li><strong>Progress Transparency</strong>: Clear reporting and milestone tracking</li>
-        <li><strong>Issue Resolution</strong>: Quick response to challenges and concerns</li>
-        <li><strong>Relationship Building</strong>: Long-term partnerships based on trust</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="benefits-item">
-    <div class="benefits-question">
-      <h3>🚀 Innovation Drive</h3>
-      <span class="benefits-icon">+</span>
-    </div>
-    <div class="benefits-answer">
-      <p>Our leadership team encourages innovation and experimentation, allowing us to deliver cutting-edge solutions that give our clients a competitive advantage.</p>
-      <ul>
-        <li><strong>Technology Adoption</strong>: Early adoption of new technologies and trends</li>
-        <li><strong>Creative Problem Solving</strong>: Innovative approaches to complex challenges</li>
-        <li><strong>Research & Development</strong>: Continuous exploration of new possibilities</li>
-        <li><strong>Competitive Advantage</strong>: Delivering solutions that set clients apart</li>
-        <li><strong>Future-Proofing</strong>: Building solutions that evolve with technology</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
 ## Get to Know Us Better
 
 <div class="service-cta">
@@ -188,10 +104,6 @@ Our experienced directors bring together decades of industry expertise and techn
     <a href="{{ '/about/' | relative_url }}" class="btn btn-secondary">Learn More About Us</a>
   </div>
   <div class="cta-features">
-    <div class="cta-feature">
-      <span class="feature-icon">💬</span>
-      <span>Direct Access to Co-Founders</span>
-    </div>
     <div class="cta-feature">
       <span class="feature-icon">📋</span>
       <span>Personalized Project Discussion</span>

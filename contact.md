@@ -9,35 +9,23 @@ permalink: /contact/
 <div class="service-hero">
   <h1>Contact Us</h1>
   <p class="service-tagline">Ready to transform your ideas into reality? We'd love to hear about your project and discuss how we can help bring your vision to life.</p>
-  <div class="service-stats">
-    <div class="stat-item">
-      <span class="stat-number">24h</span>
-      <span class="stat-label">Response Time</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number">100%</span>
-      <span class="stat-label">Free Consultation</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number">48h</span>
-      <span class="stat-label">Project Proposal</span>
-    </div>
-  </div>
 </div>
 
 ## Get in Touch
 
-### Direct Contact
-**Email**: [kvs.role1@gmail.com](mailto:kvs.role1@gmail.com)
+<div style="text-align: center; margin: 2rem 0;">
+  <h3>Direct Contact</h3>
+  <p><strong>Email</strong>: <a href="mailto:arkaved.tech@gmail.com">arkaved.tech@gmail.com</a></p>
+  <p>We typically respond to all inquiries within 24 hours during business days.</p>
+</div>
 
-We typically respond to all inquiries within 24 hours during business days.
-
-### Send us a Message
-
-Have a specific project in mind? Use the form below to tell us about your requirements, and we'll get back to you with a detailed response.
+<div style="text-align: center; margin: 2rem 0;">
+  <h3>Send us a Message</h3>
+  <p>Have a specific project in mind? Use the form below to tell us about your requirements, and we'll get back to you with a detailed response.</p>
+</div>
 
 <div class="contact-form-container">
-  <form class="contact-form" action="https://formsubmit.co/kvs.role1@gmail.com" method="POST">
+  <form class="contact-form" action="https://formsubmit.co/arkaved.tech@gmail.com" method="POST">
     <!-- FormSubmit configuration -->
     <input type="hidden" name="_subject" value="New Contact Form Submission - ArkaVed Technologies">
     <input type="hidden" name="_next" value="https://kvsrole1-rgb.github.io/Website/contact/?success=true">
@@ -186,78 +174,6 @@ Have a specific project in mind? Use the form below to tell us about your requir
   </div>
 </div>
 
-## Why Choose ArkaVed Technologies?
-
-<div class="benefits-container">
-  <div class="benefits-item">
-    <div class="benefits-question">
-      <h3>👥 Experienced Team</h3>
-      <span class="benefits-icon">+</span>
-    </div>
-    <div class="benefits-answer">
-      <p>Our directors bring years of industry experience and technical expertise to every project.</p>
-      <ul>
-        <li>Senior developers with 5+ years of experience</li>
-        <li>Industry certifications and continuous learning</li>
-        <li>Cross-functional expertise in multiple technologies</li>
-        <li>Proven track record in enterprise and startup environments</li>
-        <li>Strong communication and collaboration skills</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="benefits-item">
-    <div class="benefits-question">
-      <h3>⚡ Flexible Engagement</h3>
-      <span class="benefits-icon">+</span>
-    </div>
-    <div class="benefits-answer">
-      <p>From short-term consulting to long-term partnerships, we adapt to your business needs.</p>
-      <ul>
-        <li>Short-term consulting for specific challenges</li>
-        <li>Medium-term projects for complete solutions</li>
-        <li>Long-term partnerships for ongoing development</li>
-        <li>Dedicated development teams for full-time support</li>
-        <li>Custom engagement models tailored to your needs</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="benefits-item">
-    <div class="benefits-question">
-      <h3>🚀 Modern Technology</h3>
-      <span class="benefits-icon">+</span>
-    </div>
-    <div class="benefits-answer">
-      <p>We use the latest tools, frameworks, and best practices to ensure your solutions are future-ready.</p>
-      <ul>
-        <li>Latest versions of React, Vue.js, Angular, and modern frameworks</li>
-        <li>Cloud-native architecture with AWS, Azure, and Google Cloud</li>
-        <li>Modern DevOps practices with CI/CD pipelines</li>
-        <li>Security-first development approach and best practices</li>
-        <li>Performance optimization and scalability focus</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="benefits-item">
-    <div class="benefits-question">
-      <h3>✅ Quality Assurance</h3>
-      <span class="benefits-icon">+</span>
-    </div>
-    <div class="benefits-answer">
-      <p>Rigorous testing and quality control processes ensure reliable, scalable solutions.</p>
-      <ul>
-        <li>Comprehensive testing strategies and automated testing</li>
-        <li>Code reviews and peer programming practices</li>
-        <li>Performance testing and optimization</li>
-        <li>Security testing and vulnerability assessment</li>
-        <li>Continuous integration and deployment pipelines</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
 ## Frequently Asked Questions
 
 <div class="faq-container">
@@ -322,4 +238,6 @@ Have a specific project in mind? Use the form below to tell us about your requir
   </div>
 </div>
 
-Ready to get started? [Send us a message](#contact-form) or email us directly at [kvs.role1@gmail.com](mailto:kvs.role1@gmail.com).
+<div style="text-align: center; margin: 2rem 0;">
+  <p>Ready to get started? [Send us a message](#contact-form) or email us directly at [arkaved.tech@gmail.com](mailto:arkaved.tech@gmail.com).</p>
+</div>
