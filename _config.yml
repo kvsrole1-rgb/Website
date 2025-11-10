@@ -1,8 +1,8 @@
 # Site settings
 title: "ArkaVed Technologies Inc - Professional Software Development Services"
 description: "Leading software development company specializing in app development, game development, software consulting, and cloud services. Transform your ideas into cutting-edge digital solutions."
-baseurl: "/Website" # the subpath of your site, e.g. /blog
-url: "https://kvsrole1-rgb.github.io/Website" # the base hostname & protocol for your site
+baseurl: "" # Empty for custom domain, use "/Website" if serving from subdirectory
+url: "https://arkaved.com" # Custom domain URL
 
 # SEO and Social Media
 author: "ArkaVed Technologies Inc"
@@ -21,8 +21,8 @@ seo:
   type: "Organization"
   name: "ArkaVed Technologies Inc"
   description: "Professional software development company providing app development, game development, software consulting, and cloud services"
-  url: "https://kvsrole1-rgb.github.io/Website"
-  logo: "https://kvsrole1-rgb.github.io/Website/images/logo.png"
+  url: "https://arkaved.com" # Custom domain URL
+  logo: "https://arkaved.com/assets/images/logo.png" # Logo URL
   sameAs:
     - "https://www.linkedin.com/company/arkaved-technologies"
   social:
