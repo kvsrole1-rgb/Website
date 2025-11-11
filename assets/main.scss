@@ -75,7 +75,9 @@ body, body p, body h1, body h2, body h3, body h4, body h5, body h6 {
   margin: 0 !important;
   padding: 0.1rem 0 !important; /* Reduced padding between text and border */
   position: relative;
-  overflow: hidden;
+  overflow: visible; /* Changed to visible so menu can extend beyond header */
+  min-height: auto; /* Flexible height */
+  height: auto; /* Flexible height */
 }
 
 /* Banner background decoration - Creative and enhanced use */
@@ -107,31 +109,29 @@ body, body p, body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 
 .site-header::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 3px; /* Slightly thicker line */
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    var(--accent-yellow) 15%, 
-    var(--accent-yellow) 85%, 
-    transparent 100%);
-  opacity: 0.8; /* Increased opacity */
-  z-index: 2;
-  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.4); /* Add glow effect */
+  display: none !important; /* Remove the horizontal line */
 }
 
 .header-wrapper {
   position: relative;
   z-index: 1;
+  background: transparent !important; /* Ensure transparent background */
+  border: none !important; /* Remove any borders */
   display: flex;
+  flex-direction: row; /* Horizontal layout on desktop */
   align-items: center;
   justify-content: space-between;
   max-width: 950px; /* Lean width */
   margin: 0 auto;
-  padding: 0 1rem; /* Reduced padding between text and border */
+  padding: 0.5rem 1rem; /* Reduced padding between text and border */
+  gap: 8.5rem; /* Match the gap between navigation items */
+  
+  // On smaller screens, stack vertically
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
 }
 
 .site-title {
@@ -161,44 +161,285 @@ body, body p, body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 
 .site-nav {
-  display: flex;
+  display: flex !important;
   align-items: center;
   gap: 0.5rem;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative;
+  z-index: 10;
+  background: transparent !important; /* Transparent background */
+  border: none !important; /* No borders */
+  flex-shrink: 1;
+  min-width: 0;
+  flex: 1; /* Take available space */
+  
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+    flex: none;
+  }
 }
 
 .trigger {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem; /* Reduced gap between nav items for leaner spacing */
+  display: none !important; /* Hide old trigger - we use desktop-nav instead */
 }
 
+// Legacy page-link styles - overridden by .desktop-nav .page-link
 .page-link {
   color: var(--text-primary) !important; /* White text on charcoal background */
-  padding: 0.1rem 0.6rem; /* Reduced padding between text and border */
-  font-size: 1.2rem; /* Increased from 0.9rem for better visibility */
+  padding: 0.5rem 1rem; /* Standard padding */
+  font-size: 1rem; /* Standard font size */
   font-weight: 500; /* Slightly bolder for prominence */
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.3s ease;
+  background: transparent !important; /* Transparent by default */
+  
+  &:hover {
+    background: var(--accent-yellow) !important; /* Yellow on hover */
+    color: var(--primary-color) !important; /* Dark text on yellow */
+  }
 }
 
-@media (max-width: 768px) {
+// Desktop Navigation - Responsive horizontal menu
+.desktop-nav {
+  display: flex !important;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  visibility: visible !important;
+  opacity: 1 !important;
+  background: transparent !important; /* Completely transparent */
+  border: none !important; /* No borders */
+  padding: 0 !important; /* No padding */
+  margin: 0 !important; /* No margin */
+  
+  .page-link {
+    display: inline-block !important; /* Changed to inline-block for better visibility */
+    visibility: visible !important;
+    opacity: 1 !important;
+    white-space: nowrap;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    color: var(--text-primary) !important; /* White text */
+    text-decoration: none;
+    background: transparent !important; /* Transparent background by default */
+    border: none !important; /* No borders */
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    font-weight: 500;
+    
+    // Hover effect - yellow background
+    &:hover {
+      background: var(--accent-yellow) !important; /* Yellow background on hover */
+      color: var(--primary-color) !important; /* Dark text on yellow */
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+    }
+    
+    // Active/clicked state
+    &:active {
+      transform: translateY(0);
+    }
+  }
+  
+  // On smaller screens, allow wrapping
+  @media screen and (max-width: 900px) {
+    flex-wrap: wrap !important;
+    width: 100%;
+    gap: 0.5rem;
+  }
+}
+
+// Responsive Navigation - Move below company name on smaller screens
+@media screen and (max-width: 900px) {
+  .header-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
+  .site-nav {
+    width: 100%;
+    margin-top: 0.5rem;
+    justify-content: flex-start;
+  }
+  
+  .desktop-nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.5rem;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100%;
+    
+    .page-link {
+      display: inline-block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      font-size: 0.9rem;
+      padding: 0.5rem 0.8rem;
+      background: transparent !important;
+      color: var(--text-primary) !important;
+      border-radius: 6px;
+      
+      &:hover {
+        background: var(--accent-yellow) !important;
+        color: var(--primary-color) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-nav {
+    gap: 0.4rem;
+    
+    .page-link {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.7rem;
+    }
+  }
+  
   .site-logo {
-    height: 50px; /* Increased logo size on mobile */
+    height: 50px;
   }
   
   .company-name {
-    font-size: 1.3rem; /* Increased font size for mobile */
-    color: var(--accent-yellow) !important; /* Golden yellow color */
-  }
-  
-  .header-wrapper {
-    flex-wrap: wrap;
+    font-size: 1.3rem;
+    color: var(--accent-yellow) !important;
   }
 }
 
-.page-link:hover {
-  background-color: var(--accent-yellow) !important;
+// Smaller tablets and large phones
+@media screen and (max-width: 600px) {
+  .desktop-nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.4rem;
+    visibility: visible !important;
+    
+    .page-link {
+      display: inline-block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      font-size: 0.8rem;
+      padding: 0.4rem 0.6rem;
+      background: transparent !important;
+      color: var(--text-primary) !important;
+      
+      &:hover {
+        background: var(--accent-yellow) !important;
+        color: var(--primary-color) !important;
+      }
+    }
+  }
+  
+  .company-name {
+    font-size: 1.2rem;
+  }
+  
+  .site-logo {
+    height: 45px;
+  }
+}
+
+// Extra small screens - Very compact
+@media screen and (max-width: 480px) {
+  .desktop-nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.3rem;
+    visibility: visible !important;
+    
+    .page-link {
+      display: inline-block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      font-size: 0.75rem;
+      padding: 0.35rem 0.5rem;
+      font-weight: 500;
+      background: transparent !important;
+      color: var(--text-primary) !important;
+      
+      &:hover {
+        background: var(--accent-yellow) !important;
+        color: var(--primary-color) !important;
+      }
+    }
+  }
+  
+  .site-logo {
+    height: 40px;
+  }
+  
+  .company-name {
+    font-size: 1.1rem;
+  }
+  
+  .header-wrapper {
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+// Very small screens - Ultra compact
+@media screen and (max-width: 360px) {
+  .desktop-nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.25rem;
+    visibility: visible !important;
+    
+    .page-link {
+      display: inline-block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      font-size: 0.7rem;
+      padding: 0.3rem 0.45rem;
+      background: transparent !important;
+      color: var(--text-primary) !important;
+      
+      &:hover {
+        background: var(--accent-yellow) !important;
+        color: var(--primary-color) !important;
+      }
+    }
+  }
+  
+  .company-name {
+    font-size: 1rem;
+  }
+  
+  .site-logo {
+    height: 35px;
+  }
+}
+
+
+// Global page-link styles - ensure visibility
+.page-link {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
   color: var(--text-primary) !important;
+  background: transparent !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  
+  &:hover {
+    background: var(--accent-yellow) !important;
+    color: var(--primary-color) !important; /* Dark text on yellow background */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+  }
 }
 
 // Header CTA Button
@@ -215,8 +456,13 @@ body, body p, body h1, body h2, body h3, body h4, body h5, body h6 {
   font-size: 0.9rem;
   transition: all 0.3s ease;
   white-space: nowrap;
-  margin-left: 1rem;
+  flex-shrink: 0; /* Don't shrink */
   box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+  
+  // Hide on smaller screens
+  @media screen and (max-width: 900px) {
+    display: none !important;
+  }
 }
 
 .header-cta-btn:hover {
@@ -318,7 +564,7 @@ $background-color: #36454F !default; // Charcoal grey
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem); // Responsive font size
   margin-bottom: 1rem;
   color: var(--text-primary) !important;
   -webkit-text-fill-color: var(--text-primary) !important;
@@ -445,6 +691,7 @@ $background-color: #36454F !default; // Charcoal grey
 .team-member img {
   width: 180px;
   height: 180px;
+  max-width: 100%;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1.5rem;
@@ -603,7 +850,7 @@ h1, h2 {
 // Center section headings specifically
 section h2 {
   color: var(--accent-yellow);
-  font-size: 2.5rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem); // Responsive font size
   margin-bottom: 3rem;
   position: relative;
 }
@@ -919,7 +1166,7 @@ h3:not(.expertise-question h3):not(.process-question h3):not(.benefits-question 
 
 .service-hero h1 {
   color: var(--text-primary);
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem); // Responsive font size
   margin-bottom: 1rem;
   position: relative;
   z-index: 2;
@@ -1397,10 +1644,47 @@ h3:not(.expertise-question h3):not(.process-question h3):not(.benefits-question 
   letter-spacing: 1px;
 }
 
-// Enhanced responsive design
-@media screen and (max-width: 1200px) {
+// Enhanced responsive design - Comprehensive fixes for all screen sizes
+
+// Large screens (1920px and above)
+@media screen and (min-width: 1920px) {
   .wrapper {
-    padding: 3rem 3rem !important; /* Maintain professional spacing */
+    max-width: 1400px !important;
+    padding: 4rem 5rem !important;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+  }
+  
+  section h2 {
+    font-size: 3rem;
+  }
+  
+  .service-hero h1 {
+    font-size: 3.5rem;
+  }
+}
+
+// Extra large screens (2560px and above)
+@media screen and (min-width: 2560px) {
+  .wrapper {
+    max-width: 1600px !important;
+    padding: 5rem 6rem !important;
+  }
+}
+
+// Medium-large screens (1200px - 1919px)
+@media screen and (max-width: 1919px) and (min-width: 1200px) {
+  .wrapper {
+    padding: 3rem 3rem !important;
+  }
+}
+
+// Tablets and smaller desktops (992px - 1199px)
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .wrapper {
+    padding: 2.5rem 2.5rem !important;
   }
   
   .services-grid,
@@ -1411,192 +1695,367 @@ h3:not(.expertise-question h3):not(.process-question h3):not(.benefits-question 
   }
   
   .floating-services-grid {
-    grid-template-columns: repeat(2, 1fr); /* Maintain 2 columns on tablets */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+// Small tablets (768px - 991px)
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .wrapper {
+    padding: 2rem 2rem !important;
+  }
+  
+  .floating-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+// Tablets and mobile (768px and below)
 @media screen and (max-width: 768px) {
   .wrapper {
-    padding: 2rem 2rem !important; /* Professional spacing on tablets */
+    padding: 2rem 1.5rem !important;
+    max-width: 100% !important;
   }
   
   .page-content {
     padding: 2rem 0 !important;
   }
   
+  // Hero section
   .hero {
-    padding: 3rem 1rem;
+    padding: 3rem 1.5rem;
     margin-bottom: 2rem;
+    border-radius: 12px;
   }
   
   .hero h1 {
     font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
   }
   
+  .hero p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  // Grid layouts - single column
   .services-grid,
   .team-grid,
-  .features-grid {
-    grid-template-columns: 1fr;
+  .features-grid,
+  .floating-services-grid {
+    grid-template-columns: 1fr !important;
     gap: 1.5rem;
     margin: 2rem 0;
   }
   
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-  
   .feature-card {
-    padding: 2rem;
+    padding: 2rem 1.5rem;
   }
   
-  .faq-question {
-    padding: 1rem 1.5rem;
-  }
-  
-  .faq-answer {
-    padding: 0 1.5rem;
-  }
-  
-  .faq-item.active .faq-answer {
-    padding: 1rem 1.5rem;
-  }
-  
+  // Accordion sections
+  .faq-question,
   .process-question,
-  .benefits-question {
-    padding: 1rem 1.5rem;
+  .benefits-question,
+  .expertise-question,
+  .industries-question {
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
   }
   
+  .faq-question h3,
+  .process-question h3,
+  .benefits-question h3,
+  .expertise-question h3,
+  .industries-question h3 {
+    font-size: 1rem;
+  }
+  
+  .faq-answer,
   .process-answer,
-  .benefits-answer {
-    padding: 0 1.5rem;
+  .benefits-answer,
+  .expertise-answer,
+  .industries-answer {
+    padding: 0 1.25rem;
   }
   
+  .faq-item.active .faq-answer,
   .process-item.active .process-answer,
-  .benefits-item.active .benefits-answer {
-    padding: 1rem 1.5rem;
+  .benefits-item.active .benefits-answer,
+  .expertise-item.active .expertise-answer,
+  .industries-item.active .industries-answer {
+    padding: 1rem 1.25rem;
   }
   
+  // Cards
   .service-card,
   .team-member {
-    padding: 2rem;
+    padding: 2rem 1.5rem;
   }
   
-  .cta-section {
-    padding: 3rem 1rem;
-    margin: 3rem 0;
+  // CTA sections
+  .cta-section,
+  .service-cta {
+    padding: 3rem 1.5rem;
+    margin: 2rem 0;
+    border-radius: 15px;
   }
   
-  .cta-section h2 {
+  .cta-section h2,
+  .service-cta h2 {
     font-size: 2rem;
+    line-height: 1.3;
+  }
+  
+  .cta-section p,
+  .service-cta p {
+    font-size: 1.1rem;
   }
   
   .cta-buttons {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    gap: 1rem;
   }
   
-  .cta-stats {
+  .cta-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .cta-stats,
+  .service-stats {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
   
+  // Service hero
   .service-hero {
-    padding: 3rem 1rem;
+    padding: 3rem 1.5rem;
+    border-radius: 15px;
   }
   
   .service-hero h1 {
     font-size: 2.5rem;
+    line-height: 1.2;
   }
   
+  .service-tagline {
+    font-size: 1.1rem;
+  }
+  
+  // Section headings
   section h2 {
     font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
   }
   
-  .tech-stack-grid {
-    grid-template-columns: 1fr;
-  }
-  
+  // Tech stack and project grids
+  .tech-stack-grid,
   .project-showcase {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
   
-  .expertise-question,
-  .industries-question {
-    padding: 1rem 1.5rem;
+  // Contact form
+  .contact-form,
+  .contact-form-container {
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
   }
   
-  .expertise-answer,
-  .industries-answer {
-    padding: 0 1.5rem;
+  .form-row {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
   }
   
-  .expertise-item.active .expertise-answer,
-  .industries-item.active .industries-answer {
-    padding: 1rem 1.5rem;
-  }
-  
-  .contact-form {
-    padding: 2rem;
-  }
-  
+  // Team images
   .team-member img {
     width: 150px;
     height: 150px;
+    max-width: 100%;
   }
   
-  .site-header {
-    padding: 0.2rem 0 !important; /* Reduced padding between text and border */
+  // Containers
+  .faq-container,
+  .process-container,
+  .benefits-container,
+  .expertise-container {
+    max-width: 100%;
+    margin: 2rem 0;
   }
   
-  .company-name {
-    font-size: 1.4rem; /* Increased font size */
-    color: var(--accent-yellow) !important; /* Golden yellow color */
+  // Service pricing
+  .service-pricing {
+    padding: 2rem 1.5rem;
   }
   
-  .company-tagline {
-    font-size: 0.9rem;
+  // Feature icons
+  .feature-icon,
+  .service-icon {
+    font-size: 2.5rem;
+  }
+  
+  // Buttons
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
   }
 }
 
+// Small mobile devices (480px and below)
 @media screen and (max-width: 480px) {
   .wrapper {
-    padding: 1.5rem 1.5rem !important; /* Professional spacing on mobile */
+    padding: 1.5rem 1rem !important;
   }
   
   .page-content {
     padding: 1.5rem 0 !important;
   }
   
+  // Hero section
   .hero {
-    padding: 2rem 0.5rem;
+    padding: 2rem 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
   }
   
   .hero h1 {
     font-size: 2rem;
+    line-height: 1.2;
   }
   
+  .hero p {
+    font-size: 0.95rem;
+  }
+  
+  // Cards
   .service-card,
   .team-member,
-  .contact-form {
-    padding: 1.5rem;
+  .feature-card {
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
   }
   
+  // Contact form
+  .contact-form,
+  .contact-form-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+  
+  // Team images
   .team-member img {
     width: 120px;
     height: 120px;
   }
   
+  // Buttons
   .btn {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.8rem;
+    padding: 0.65rem 1.2rem;
+    font-size: 0.85rem;
   }
   
+  // Section headings
   section h2 {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  // Service hero
+  .service-hero {
+    padding: 2rem 1rem;
   }
   
   .service-hero h1 {
     font-size: 2rem;
+  }
+  
+  .service-tagline {
+    font-size: 1rem;
+  }
+  
+  // CTA sections
+  .cta-section,
+  .service-cta {
+    padding: 2rem 1rem;
+  }
+  
+  .cta-section h2,
+  .service-cta h2 {
+    font-size: 1.75rem;
+  }
+  
+  .cta-section p,
+  .service-cta p {
+    font-size: 1rem;
+  }
+  
+  // Accordions
+  .faq-question,
+  .process-question,
+  .benefits-question,
+  .expertise-question,
+  .industries-question {
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .faq-answer,
+  .process-answer,
+  .benefits-answer,
+  .expertise-answer,
+  .industries-answer {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .faq-item.active .faq-answer,
+  .process-item.active .process-answer,
+  .benefits-item.active .benefits-answer,
+  .expertise-item.active .expertise-answer,
+  .industries-item.active .industries-answer {
+    padding: 0.9rem 1rem;
+  }
+  
+  // Service pricing
+  .service-pricing {
+    padding: 1.5rem 1rem;
+  }
+  
+  // Feature icons
+  .feature-icon,
+  .service-icon {
+    font-size: 2rem;
+  }
+  
+  // Grids
+  .services-grid,
+  .team-grid,
+  .features-grid {
+    gap: 1.25rem;
+    margin: 1.5rem 0;
+  }
+  
+  // Stats
+  .stat-item {
+    padding: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 1.75rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
   }
 }
 
@@ -1668,6 +2127,12 @@ h3:not(.expertise-question h3):not(.process-question h3):not(.benefits-question 
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem; /* Increased gap between form fields in same row */
   margin-bottom: 0; /* Remove any default margin */
+  
+  // Responsive: single column on mobile
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 .form-group {
@@ -1956,6 +2421,14 @@ h3:not(.expertise-question h3):not(.process-question h3):not(.benefits-question 
   padding: 4rem 0 2rem 0;
   background: var(--gradient-secondary);
   position: relative;
+  
+  @media screen and (max-width: 768px) {
+    padding: 3rem 0 1.5rem 0;
+  }
+  
+  @media screen and (max-width: 480px) {
+    padding: 2rem 0 1rem 0;
+  }
 }
 
 .footer-main::before {
@@ -1977,6 +2450,17 @@ h3:not(.expertise-question h3):not(.process-question h3):not(.benefits-question 
   position: relative;
   z-index: 2;
   align-items: start;
+  
+  // Responsive footer layout
+  @media screen and (max-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 .footer-section {
