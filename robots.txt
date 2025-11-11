@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://kvsrole1-rgb.github.io/Website/sitemap.xml
+Sitemap: https://arkaved.com/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
