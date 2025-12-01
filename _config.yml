@@ -1,12 +1,12 @@
 # Site settings
 title: "ArkaVed Technologies Inc - Professional Software Development Services"
-description: "Leading software development company specializing in app development, game development, software consulting, and cloud services. Transform your ideas into cutting-edge digital solutions."
+description: "Leading software development company specializing in app development, game development, software consulting, and web development. Transform your ideas into cutting-edge digital solutions."
 baseurl: "" # Empty for custom domain, use "/Website" if serving from subdirectory
 url: "https://arkaved.com" # Custom domain URL
 
 # SEO and Social Media
 author: "ArkaVed Technologies Inc"
-keywords: "software development, app development, game development, cloud services, mobile apps, web development, software consulting, technology solutions, digital transformation, custom software, enterprise software, fintech, healthcare technology, e-commerce development"
+keywords: "software development, app development, game development, web development, mobile apps, web applications, software consulting, technology solutions, digital transformation, custom software, enterprise software, fintech, healthcare technology, e-commerce development"
 google_site_verification: ""
 twitter:
   username: ""
@@ -20,7 +20,7 @@ facebook:
 seo:
   type: "Organization"
   name: "ArkaVed Technologies Inc"
-  description: "Professional software development company providing app development, game development, software consulting, and cloud services"
+  description: "Professional software development company providing app development, game development, software consulting, and web development"
   url: "https://arkaved.com" # Custom domain URL
   logo: "https://arkaved.com/assets/images/logo.png" # Logo URL
   sameAs:

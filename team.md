@@ -22,8 +22,8 @@ permalink: /team/
     <img src="{{ '/assets/images/Jayesh.jpeg' | relative_url }}" alt="Jayesh Sanjay Yeola - Co-Founder/Chief Software Developer at ArkaVed Technologies Inc" loading="lazy">
     <h3>Jayesh Sanjay Yeola</h3>
     <p class="role">Co-Founder/Chief Software Developer</p>
-    <p>Jayesh brings extensive experience in software development and technology leadership. With a strong background in enterprise solutions and cloud architecture, he has successfully led numerous projects across various industries.</p>
-    <p>His expertise spans full-stack development, cloud computing, and strategic technology consulting. Jayesh is passionate about leveraging technology to solve complex business challenges and drive digital transformation.</p>
+    <p>Jayesh brings extensive experience in software development and technology leadership. With a strong background in enterprise solutions and software architecture, he has successfully led numerous projects across various industries.</p>
+    <p>His expertise spans full-stack development, game developement, app development and strategic technology consulting. Jayesh is passionate about leveraging technology to solve complex business challenges and drive digital transformation.</p>
     <a href="https://www.linkedin.com/in/jayeshyeola/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">LinkedIn Profile</a>
   </div>
 
@@ -31,8 +31,8 @@ permalink: /team/
     <img src="{{ '/assets/images/Kalika.jpeg' | relative_url }}" alt="Kalika Vats - Co-Founder/Chief Technical Consultant at ArkaVed Technologies Inc" loading="lazy">
     <h3>Kalika Vats</h3>
     <p class="role">Co-Founder/Chief Technical Consultant</p>
-    <p>Kalika is a seasoned technology professional with deep expertise in mobile application development, game development, and user experience design. She has a proven track record of delivering innovative solutions that exceed client expectations.</p>
-    <p>Her technical skills include mobile app development, game engines, UI/UX design, and project management. Kalika is dedicated to creating engaging digital experiences that connect with users and drive business success.</p>
+    <p>Kalika is a seasoned technology professional with deep expertise in mobile application development, web development, and user experience design. She has a proven track record of delivering innovative solutions that exceed client expectations.</p>
+    <p>Her technical skills include mobile app development, UI/UX design, and project management. Kalika is dedicated to creating engaging digital experiences that connect with users and drive business success.</p>
     <a href="https://www.linkedin.com/in/kalikavats" target="_blank" rel="noopener noreferrer" class="btn btn-primary">LinkedIn Profile</a>
   </div>
 </div>

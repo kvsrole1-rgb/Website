@@ -2,7 +2,7 @@
 layout: default
 title: "About ArkaVed Technologies Inc - Leading Software Development Company"
 description: "Learn about ArkaVed Technologies Inc and our mission to transform innovative ideas into cutting-edge digital solutions. Expert team with years of industry experience."
-keywords: "about us, software development company, technology solutions, app development, game development, cloud services, team expertise"
+keywords: "about us, software development company, technology solutions, app development, game development, web development, team expertise"
 permalink: /about/
 ---
 
